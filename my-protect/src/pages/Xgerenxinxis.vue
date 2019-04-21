@@ -1,22 +1,17 @@
 <template>
   <div>
-
-    <Xheader/>
-    <Xfaxian/>
+    <Xgerenxinxi/>
     <Xfooter/>
   </div>
 </template>
 
 <script>
-import Xheader from "../components/Xheader.vue";
-import Xfaxian from "../components/Xfaxian.vue";
-
+import Xgerenxinxi from "../components/Xgerenxinxi.vue";
 import Xfooter from "../components/Xfooter.vue";
 
 export default {
   components: {
-    Xheader,
-    Xfaxian,
+    Xgerenxinxi,
     Xfooter
   }
 };

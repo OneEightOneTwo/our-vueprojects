@@ -28,9 +28,9 @@ var photoSwipe={
     },
     /*图片HTML*/
     imgHtml:function () {
-        var str='<div id="ind-'+this.index+'">'
+        var str='<div id="ind-'+this.index+'" >'
             +'<div class="div1">第'+(this.index+1)+'个</div>'
-            +'<img src="../img/aa.jpg" style="width: 8rem;  height:11.305556rem"/>'
+            +'<img src="../img/aa.jpg" style=" height: 10.9rem;"  class="qiehuan"/>'
             +' <div style="float:left;padding-left:10px;font-size:14px">'
             +'<span style="color:#9090da">小美儿&nbsp;,</span>&nbsp;<span style="color:red">26</span>'
             +'<p style="margin-left: -30px;">3km</p>'
@@ -127,4 +127,7 @@ $("#photo_box").on("touchend",function(e) {
 
 $(function () {
     photoSwipe.load=true;
+    $(".qiehuan").click(function(){
+        location.href="http://localhost:8080/#/Goodlist";
+    })
 });

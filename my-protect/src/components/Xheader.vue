@@ -1,17 +1,18 @@
 <template>
   <header>
     <div class="leftIcon">
-      <img src="../assets/shuaxin.png" alt="">
+      <img src="../assets/shuaxin.png" alt>
     </div>
     <div class="title">探探</div>
     <div class="rightIcon">
-      <img src="../assets/shandian.png" alt="">
+      <img src="../assets/shandian.png" alt>
     </div>
   </header>
 </template>
 <script>
 // import state from "../observable.js";
 export default {
+  
 
 };
 </script>
@@ -32,28 +33,28 @@ header {
   top: 0px;
   left: 0px;
 }
-header .leftIcon{
+header .leftIcon {
   flex: 1;
   /* display: flex; */
-  align-items: center
+  align-items: center;
 }
-header .leftIcon img{
- width:23px;
+header .leftIcon img {
+  width: 23px;
   height: 23px;
   vertical-align: middle;
 }
-header .title{
-  flex:3;
+header .title {
+  flex: 3;
 }
-header .rightIcon{
+header .rightIcon {
   flex: 1;
   /* display: flex; */
-  align-items: center
+  align-items: center;
 }
-header .rightIcon img{
-   width:55px;
-  height: 30px; 
-vertical-align: middle;
+header .rightIcon img {
+  width: 55px;
+  height: 30px;
+  vertical-align: middle;
 }
 </style>
 

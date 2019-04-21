@@ -2,7 +2,7 @@
   <div>
     <div class="login_bg">
       <div id="logo">
-        <img src="../assets/logo.png" alt>
+        <img src="../assets/tantan.jpg" alt>
       </div>
       <a class="entrancea" href="javascript:;" @click="tolanding">登&nbsp;&nbsp;录</a>
       <a

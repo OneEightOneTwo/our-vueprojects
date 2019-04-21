@@ -17,9 +17,16 @@ import Home from './pages/Home.vue'
 import News from './pages/News.vue'
 //发现
 import Xfaxians from './pages/Xfaxians.vue'
-
+//个人信息
+import Xgerenxinxis from './pages/Xgerenxinxis.vue'
 // 详情页
 import Goodlist from './components/Goodlist.vue'
+//朋友圈
+import Xfriends from './components/Xfriends.vue'
+//手机通讯录
+import  Txun from './components/Txun.vue'
+
+import Tonxun from './components/Tonxun.vue'
 //定义路由
 const routes = [{
     path: '/Dlu',
@@ -37,9 +44,29 @@ const routes = [{
     name: 'entrance'
 },
 {
+    path: '/Tonxun',
+    component: Tonxun,
+    name: 'tonxun'
+},
+{
+    path: '/Txun',
+    component: Txun,
+    name: 'txun'
+},
+{
+    path: '/Xfriends',
+    component: Xfriends,
+    name: 'xfriends'
+},
+{
     path: '/Goodlist',
     component: Goodlist,
     name: 'goodlist'
+},
+{
+    path: '/Xgerenxinxis',
+    component: Xgerenxinxis,
+    name: 'xgerenxinxis'
 },
 {
     path: '/Xfaxians',
@@ -54,7 +81,8 @@ const routes = [{
 {
     path: '/Home',
     component: Home,
-    name: 'Home'
+    name: 'Home',
+    
 },
 {
     path: '/',

@@ -1,8 +1,6 @@
 <template>
   <div id="faxian">
-    <!-- <h1>
-      <strong>发现</strong>
-    </h1> -->
+    <div style="height:.694444rem;"></div>
     <div class="main">
       <p class="p1">
         <span>
@@ -28,7 +26,6 @@
 <style scoped>
 
 #faxian {
-  margin-top:.694444rem;
   height: 100%;
   display: flex;
   flex-direction: column;

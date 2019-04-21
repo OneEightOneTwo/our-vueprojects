@@ -2,16 +2,17 @@
   <div>
     <router-view></router-view>
     <Xheader/>
-    <!-- <New/> -->
+
     <Xmain/>
     <Xfooter/>
   </div>
 </template>
 
 <script>
+// <!-- 修改了main图片的尺寸，自适合移动的尺寸 author:lqw-->
+//完成了首页点击图片进入详情页 author:lqw
 import Xheader from "../components/Xheader.vue";
 
-// import New from "../components/New.vue";
 
 import Xmain from "../components/Xmain.vue";
 
@@ -22,7 +23,7 @@ export default {
 
   components: {
     Xheader,
-    // New,
+  
     Xmain,
     Xfooter
   }
