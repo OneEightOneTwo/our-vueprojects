@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import Xheader from "../components/Xheader.vue";
+import Xheader from "../components/Xnew.vue";
 
 import New from "../components/New.vue";
 

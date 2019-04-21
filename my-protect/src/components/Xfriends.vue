@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="header">
-      <span>
+      <span @click="fanhui">
         <img src="../assets/q11.png" alt>
       </span>
       <span class="title">朋友圈</span>
@@ -69,7 +69,13 @@
   </div>
 </template>
 <script>
-export default {};
+export default {
+  methods:{
+    fanhui:function(){
+      this.$router.go(-1);
+    }
+  }
+};
 </script>
 <style scoped>
 .header {

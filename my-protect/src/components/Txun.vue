@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="theader">
-      <div class="leftIcon">
+      <div class="leftIcon" @click="fanhui">
         <img src="../assets/q11.png" alt>
       </div>
       <div class="title">匿名暗恋表白</div>
@@ -24,7 +24,11 @@
 
 
 export default {
- 
+  methods:{
+    fanhui:function(){
+      this.$router.go(-1);
+    }
+  }
 };
 
 </script>

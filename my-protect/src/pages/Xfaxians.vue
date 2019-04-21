@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import Xheader from "../components/Xheader.vue";
+import Xheader from "../components/Xfind.vue";
 import Xfaxian from "../components/Xfaxian.vue";
 
 import Xfooter from "../components/Xfooter.vue";
