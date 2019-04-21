@@ -2,7 +2,7 @@
   <div id="faxian">
     <div style="height:.694444rem;"></div>
     <div class="main">
-      <p class="p1">
+      <p class="p1" @click="toshowA">
         <span>
           <img class="img1" src="../assets/06.png" alt>
         </span>
@@ -11,7 +11,7 @@
           <img class="img2" src="../assets/xiangyou.png" alt>
         </span>
       </p>
-      <p class="p2">
+      <p class="p2" @click="toshowB">
         <span>
           <img class="img1" src="../assets/07.png" alt>
         </span>
@@ -23,6 +23,20 @@
     </div>
   </div>
 </template>
+<script>
+export default {
+  methods:{
+     toshowA() {
+      this.$router.push({ name: "xfriends" });
+      
+    },
+    toshowB() {
+      this.$router.push({ name: "txun" });
+    }
+  }
+}
+</script>
+
 <style scoped>
 
 #faxian {

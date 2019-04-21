@@ -14,7 +14,7 @@
     <!-- 主体 -->
     <div class="main">
       <!-- love -->
-      <div class="love">
+      <div class="love"  @click="showCont">
         <div class="like">
           <span class="span01">7</span>
           <span>
@@ -25,32 +25,65 @@
         </div>
         <div class="like2">
           <span>谁喜欢我?</span>
-          <div class="loveMe">
+          <div class="loveMe" v-if="!show">
             <div class="likeXiXi">
               <div>
-                   <img src="../assets/love.png" alt>
+                <img src="../assets/love.png" alt>
               </div>
               <h2>查看谁喜欢我</h2>
               <p>查看喜欢你的人,右滑直接配对</p>
             </div>
             <div class="baoyue">
-                <div class="d01 baoyueActive">
-                  <p> <span>1</span><span>个月</span></p>
-                  <p> <span>特惠&nbsp;&yen;&nbsp;</span><span>48</span></p>
-                  <p> <span>&nbsp;&yen;&nbsp;</span><span>48</span><span>/月</span></p>
-                </div>
-                <div class="d01">
-                  <p> <span>1</span><span>个月</span></p>
-                  <p> <span>特惠&nbsp;&yen;&nbsp;</span><span>48</span></p>
-                  <p> <span>&nbsp;&yen;&nbsp;</span><span>48</span><span>/月</span></p>
-                </div>
-                <div class="d01">
-                  <p> <span>1</span><span>个月</span></p>
-                  <p> <span>特惠&nbsp;&yen;&nbsp;</span><span>48</span></p>
-                  <p> <span>&nbsp;&yen;&nbsp;</span><span>48</span><span>/月</span></p>
-                </div>
-                <!-- <div class="d01"></div>
-                <div class="d01"></div> -->
+              <div class="d01 baoyueActive">
+                <p>
+                  <span>1</span>
+                  <span>个月</span>
+                </p>
+                <p>
+                  <span>特惠&nbsp;&yen;&nbsp;</span>
+                  <span>48</span>
+                </p>
+                <p>
+                  <span>&nbsp;&yen;&nbsp;</span>
+                  <span>48</span>
+                  <span>/月</span>
+                </p>
+              </div>
+              <div class="d01">
+                <p>
+                  <span>1</span>
+                  <span>个月</span>
+                </p>
+                <p>
+                  <span>特惠&nbsp;&yen;&nbsp;</span>
+                  <span>48</span>
+                </p>
+                <p>
+                  <span>&nbsp;&yen;&nbsp;</span>
+                  <span>48</span>
+                  <span>/月</span>
+                </p>
+              </div>
+              <div class="d01">
+                <p>
+                  <span>1</span>
+                  <span>个月</span>
+                </p>
+                <p>
+                  <span>特惠&nbsp;&yen;&nbsp;</span>
+                  <span>48</span>
+                </p>
+                <p>
+                  <span>&nbsp;&yen;&nbsp;</span>
+                  <span>48</span>
+                  <span>/月</span>
+                </p>
+              </div>
+              <!-- <div class="d01"></div>
+              <div class="d01"></div>-->
+            </div>
+            <div class="loveniu">
+              <span>确定</span><span>取消</span>
             </div>
           </div>
         </div>
@@ -114,8 +147,17 @@
 </template>
 <script>
 export default {
-  
-}
+  data() {
+    return {
+      show: true
+    };
+  },
+  methods: {
+    showCont: function() {
+      this.show = !this.show;
+    }
+  }
+};
 </script>
 <style  scoped>
 #xinxi {
@@ -198,21 +240,21 @@ export default {
 
   position: relative;
 }
-.love >.like2> span {
+.love > .like2 > span {
   font-size: 0.361111rem;
   line-height: 0.5rem;
   color: #c95440;
   float: right;
 }
 .love > .like2 .loveMe {
-  height: 14.652778rem;
+  height: 12.652778rem;
   width: 8.611111rem;
   position: absolute;
   left: -95%;
   top: -394%;
   border-radius: 0.277778rem;
   background: #ffffff;
-  padding:0 .333333rem;
+  padding: 0 0.333333rem;
 }
 .love > .like2 .loveMe .likeXiXi {
   width: 100%;
@@ -223,7 +265,7 @@ export default {
   text-align: center;
 }
 .love > .like2 .loveMe .likeXiXi img {
-  display:inline-block;
+  display: inline-block;
   height: 2.5rem;
   width: 2.5rem;
   margin: 1.277778rem 0 0.916667rem 0;
@@ -231,25 +273,34 @@ export default {
 .love > .like2 .loveMe .likeXiXi h2 {
   font-size: 0.513889rem;
   margin-bottom: 0.458333rem;
-  color:#000;
+  color: #000;
 }
-.love > .like2 .loveMe >.likeXiXi p{
-  color:#808080;
-  font-size: .361111rem;
-  margin-bottom: .777778rem;
+.love > .like2 .loveMe > .likeXiXi p {
+  color: #808080;
+  font-size: 0.361111rem;
+  margin-bottom: 0.777778rem;
 }
-.love > .like2 .loveMe .baoyue{
+.love > .like2 .loveMe .baoyue {
   width: 100%;
 }
-.love > .like2 .loveMe .baoyue .d01{
+.love > .like2 .loveMe .baoyue .d01 {
   width: 2.638889rem;
   height: 3.027778rem;
-  background:#99968e;
+  background: #99968e;
   text-align: center;
   float: left;
 }
-.love > .like2 .loveMe .baoyue .d01 p:nth-of-type(1){
-  padding-top:.611111rem;
+.love > .like2 .loveMe .baoyue .d01 p:nth-of-type(1) {
+  padding-top: 0.611111rem;
+}
+.love > .like2 .loveMe .loveniu span{
+  display: inline-block;
+  height: 30px;
+  width: 100px;
+  background: rgb(152, 152, 219);
+  margin: 20px;
+  text-align: center;
+  line-height: 30px;
 }
 /* 公共类 */
 .active {
